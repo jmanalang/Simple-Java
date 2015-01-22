@@ -1,0 +1,67 @@
+CSE116 HW3
+
+***************************************************************************
+** Academic Integrity reminder                                           **
+***************************************************************************
+** You are submitting this write-up for INDIVIDUAL CREDIT.  As such, you **
+** must work on it as an INDIVIDUAL.  To do otherwise is a violation of  **
+** academic integrity.                                                   **
+***************************************************************************
+
+GENERAL INSTRUCTIONS:
+--------------------
+Your task is to define a class with one method, described below.
+
+Your class must be defined in a named package placed in the 'src' folder.
+You may NOT name the package 'tests' or 'util', but aside from that any
+valid Java package name is acceptable.
+
+You may choose any valid Java class name for your class.
+
+You may choose any valid Java method names for your methods.  Your methods may
+be either static or non-static, but if non-static your class must provide a 
+no-argument constructor (either the default constructor, or an explicit one).
+
+The functionality of your definitions will be verified by JUnit tests.
+IMPORTANT: note that if the methods are simply stubbed out (just return true or
+false) then the all the tests for that method will fail.  You must provide a
+non-stub implementation in order for the tests to have a chance of passing.
+
+HOMEWORK-SPECIFIC INSTRUCTIONS:
+------------------------------
+
+A description of the required (public) method:
+
+/**************************************************************************
+ * @param  a String denoting the inputPath the path on the local filesystem
+ *         to the input file
+ * @return a HashMap<String,String> of name:telephone number mappings, as
+ *         described below.
+ *
+ * The file will contain names and telephone numbers, in the format indicated
+ * by this example:
+ * 
+ * Anna:645-3180
+ * Bob Smith:1-905-645-3181x1294
+ * Miss Christina R. Jones:+011-46-017-364388
+ * 
+ * Each line contains only one name and only one telephone number.  The name
+ * consists of all the characters from the start of the line to the colon
+ * character, ':'.  The telephone number consists of all the characters after
+ * the colon character to the end of the line (which will always be denoted by
+ * a newline character, '\n').
+ *
+ * The first name:telephone number combination will appear on the first line
+ * the file.  The last name:telephone number combination will appear on the
+ * last line of the file (terminated by a newline character).  There will be
+ * no blank lines in the input file.  Note that since telephone numbers can
+ * contain characters other than digits, they must be read and stored as Strings.
+ * 
+ * You must use only CharacterFromFileReader to read characters from the input
+ * file.
+ * 
+ * In order to keep your code readable, break your code into several methods.
+ * Define meaningful private helper methods that you call from the required
+ * public method.
+ **************************************************************************/
+ 

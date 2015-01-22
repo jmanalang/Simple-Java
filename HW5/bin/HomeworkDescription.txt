@@ -1,0 +1,20 @@
+CSE116 HW5
+
+***************************************************************************
+** Academic Integrity reminder                                           **
+***************************************************************************
+** You are submitting this write-up for INDIVIDUAL CREDIT.  As such, you **
+** must work on it as an INDIVIDUAL, without any outside resources.      **
+** To do otherwise is a violation of academic integrity and will result  **
+** in FAILURE IN THE COURSE.                                             **
+***************************************************************************
+
+Your task is to complete the definition of the Visitor class in the
+code package.  You must define the bodies of the two methods (emptyCase and
+nonEmptyCase).  You must NOT change the method headers - they MUST be as given.
+
+The functionality of your definitions will be verified by JUnit tests.
+IMPORTANT: note that if the methods are simply stubbed out then the all the 
+tests for that method will fail.  You must provide a non-stub implementation 
+in order for the tests to have a chance of passing.
+

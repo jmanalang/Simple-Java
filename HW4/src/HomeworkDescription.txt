@@ -1,0 +1,56 @@
+CSE116 Homework #4
+
+***************************************************************************
+** Academic Integrity reminder                                           **
+***************************************************************************
+** You are submitting this write-up for INDIVIDUAL CREDIT.  As such, you **
+** must work on it as an INDIVIDUAL.  To do otherwise is a violation of  **
+** academic integrity.                                                   **
+***************************************************************************
+
+GENERAL INSTRUCTIONS:
+--------------------
+Your task is to define a class with one method, described below.
+
+Your class must be defined in a named package placed in the 'src' folder.
+You may NOT name the package 'tests' or 'util', but aside from that any
+valid Java package name is acceptable.
+
+You may choose any valid Java class name for your class.
+
+You may choose any valid Java method names for your methods.  Your methods may
+be either static or non-static, but if non-static your class must provide a 
+no-argument constructor (either the default constructor, or an explicit one).
+
+The functionality of your definitions will be verified by JUnit tests.
+IMPORTANT: note that if the methods are simply stubbed out (just return true or
+false) then the all the tests for that method will fail.  You must provide a
+non-stub implementation in order for the tests to have a chance of passing.
+
+HOMEWORK-SPECIFIC INSTRUCTIONS:
+------------------------------
+
+A description of the required (public) method:
+
+/**************************************************************************
+ * @param a String denoting a path on the local filesystem, the input file
+ * @returns a HashMap<String,Integer> containing author->count mappings
+ *
+ * This method must read the contents of a file (identified by inputFilePath),
+ * one char at a time, find the authors in the file, and keep track of author
+ * counts in a java.util.HashMap<String,Integer>. 
+ * 
+ * An author is defined as a contiguous sequence of characters that appear
+ * between an opening {A} tag and its corresponding closing {a} tag.
+ *
+ * You MUST use the state-transition approach (explained in recitation)
+ * for solving this problem, since learning this technique was part of
+ * the goal of this homework.
+ *
+ * You MUST also draw a suitable state-transition diagram for your solution,
+ * and hand it in at the conclusion of your write-up.
+ *   
+ * You must use only CharacterFromFileReader to read characters from the input
+ * file.
+ *
+ **************************************************************************/

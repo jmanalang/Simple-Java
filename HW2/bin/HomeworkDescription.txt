@@ -1,0 +1,65 @@
+CSE116 HW2
+
+Your task is to define a class with exactly one public method, described below.
+
+Your class must be defined in a named package placed in the 'src' folder.
+You may NOT name the package 'tests' or 'util', but aside from that any
+valid Java package name is acceptable.
+
+You may choose any valid Java class name for your class.
+
+You may choose any valid Java method names for your methods.  Your methods may
+be either static or non-static, but if non-static your class must provide a 
+no-argument constructor (either the default constructor, or an explicit one).
+
+The functionality of your definitions will be verified by JUnit tests.
+IMPORTANT: note that if the methods are simply stubbed out (just return true or
+false) then the all the tests for that method will fail.  You must provide a
+non-stub implementation in order for the tests to have a chance of passing.
+
+A description of the required method:
+
+/**************************************************************************
+ * @param s is the original String (the sole parameter of the method)
+ * @return an int[] of size 3, containing the character counts as described 
+ * below.
+ *
+ * Definitions:
+ *
+ * [letter] A character ch is a letter if and only if
+ *          ( 'a' <= ch AND ch <= 'z' ) OR ( 'A' <= ch AND ch <= 'Z' )  
+ *
+ * [vowel]  The following characters are vowels: 'a', 'e', 'i', 'o', 'u',
+ *          as are their upper-case equivalents: 'A', 'E', 'I', 'O' and 'U'.
+ *
+ * [consonant] A letter which is not a vowel is a consonant.
+ *
+ * [non-alphabetic] Any character which is not a letter is a non-alphabetic
+ *          character.
+ *
+ * The count of vowel characters must be in position 0 of the array,
+ * the count of consonant characters must be in position 1 of the array, and
+ * the count of all non-alphabetic characters must be in position 2 of the array.
+ * 
+ * Some examples:
+ * 
+ * if s is "", then:
+ *     all entries in the array must be 0.
+ * if s is "a", then:
+ *     all entries in the array must be 0 except for entry 0, which must be 1.
+ * if s is "Baaa!", then:
+ *     entry 0 of the array must be 3 (because there are three vowels)
+ *     entry 1 of the array must be 1 (because there is one consonant), and
+ *     entry 2 of the array must be 1 (because there is one non-alphabetic character).
+ * 
+ * The only methods you may call on the String s are charAt(int) and length().
+ *
+ * You may use the static toLowerCase method defined in the Character class,
+ * which maps a char to its lower-case equivalent.  For example,
+ *     Character.toLowerCase('a') returns 'a'
+ *     Character.toLowerCase('A') returns 'A'
+ *     Character.toLowerCase('%') returns '%'
+ * 
+ * You may, if you wish, define private helper methods that you call from your
+ * character counting method.
+ **************************************************************************/
